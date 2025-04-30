@@ -1,0 +1,18 @@
+{
+  "layout": "elk",
+  "look": "handDrawn",
+  "theme": "dark",
+  "themeVariables": {
+    "fontFamily": "arial",
+    "fontSize": "16px",
+    "darkMode": true,
+    "background": "#333333",
+    "mainBkg": "#333333",
+    "primaryColor": "#1f2020",
+    "primaryTextColor": "#fff",
+    "primaryBorderColor": "#fff",
+    "lineColor": "#F8F8F2",
+    "tertiaryColor": "#333333",
+    "canvasColor": "#333333"
+  }
+}

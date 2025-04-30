@@ -1,0 +1,84 @@
+graph TD
+    %% Report Structure Diagram for Bilabonnement.dk Project
+
+    %% Start Node
+    Start((Eksamensprojekt)) --> Forside
+
+    %% Main Document Sections
+    Forside["Forside (Titel, Gruppeinfo, Links, DB/Login Info)"] --> Indholdsfortegnelse["Indholdsfortegnelse (Navigation)"]
+
+    Indholdsfortegnelse --> P1_Indledning["1. Indledning (Sætter scenen)"]
+    subgraph "1. Indledning"
+        P1_1["1.1 Baggrund (Kontekst)"]
+        P1_2["1.2 Problemstilling (Hvad løses?)"]
+        P1_3["1.3 Formål (Mål for projektet)"]
+        P1_4["1.4 Afgrænsning (Scope)"]
+        P1_5["1.5 Læsevejledning (Guide)"]
+    end
+
+    P1_Indledning --> P2_Analyse["2. Analyse (Forståelse af domæne & krav)"]
+    subgraph "2. Analyse"
+        P2_1["2.1 Interessentanalyse (Hvem & Hvorfor?)"]
+        P2_2["2.2 Risikoanalyse (Hvad kan gå galt?)"]
+        P2_3["2.3 Feasibility Study (Kan det lade sig gøre?)"]
+        P2_4["2.4 Forretningsproces (Activity Diagram - Hvordan fungerer det?)"]
+        P2_5["2.5 Domæneanalyse (Domain Model/Glossary - Hvad handler det om?)"]
+    end
+
+    P2_Analyse --> P3_Design["3. Design (Planlægning af løsningen)"]
+    subgraph "3. Design"
+        P3_1["3.1 Kravspecifikation (Hvad skal systemet kunne? - User Stories)"]
+        P3_2["3.2 Systemarkitektur (Package Diagram - Overordnet kodestruktur)"]
+        P3_3["3.3 Detaljeret Design (Class/Sequence Diags - Klasser & Interaktioner)"]
+        P3_4["3.4 Databasedesign (ERD - Datastruktur)"]
+        P3_5["3.5 UI Design (Wireframes/Mockups - Brugergrænseflade)"]
+        P3_6["3.6 Acceptkriterier (Hvornår er en User Story færdig?)"]
+    end
+
+    P3_Design --> P4_Implementering["4. Implementering (Bygning af løsningen)"]
+    subgraph "4. Implementering"
+        P4_1["4.1 Teknologi (Valgte værktøjer & platforme)"]
+        P4_2["4.2 Programmering (Kode, struktur, komplekse dele)"]
+        P4_3["4.3 Database (DB opsætning & data)"]
+        P4_4["4.4 Deployment (Udrulning til Azure)"]
+    end
+
+    P4_Implementering --> P5_Test["5. Test (Verificering af løsningen)"]
+    subgraph "5. Test"
+        P5_1["5.1 Teststrategi (Hvordan testes der?)"]
+        P5_2["5.2 Test Cases (Specifikke tests)"]
+        P5_3["5.3 Unit Test (Kode-niveau test)"]
+        P5_4["5.4 Systemtest (Samlet funktionstest)"]
+    end
+
+    P5_Test --> P6_Projektstyring["6. Projektstyring (Scrum processen)"]
+    subgraph "6. Projektstyring (Scrum)"
+        P6_1["6.1 Proces (Roller & Sprints)"]
+        P6_2["6.2 Artefakter (Backlogs & Burndown Charts)"]
+        P6_3["6.3 Samarbejde (Teamwork & værktøjer)"]
+    end
+
+    P6_Projektstyring --> P7_Konklusion["7. Konklusion (Opsummering & Refleksion)"]
+    subgraph "7. Konklusion"
+        P7_1["7.1 Opsamling (Resume)"]
+        P7_2["7.2 Vurdering (Opfyldelse af krav?)"]
+        P7_3["7.3 Læring (Hvad lærte vi?)"]
+        P7_4["7.4 Fremtidigt Arbejde (Næste skridt?)"]
+    end
+
+    P7_Konklusion --> P8_Litteraturliste["8. Litteraturliste (Anvendte kilder)"]
+
+    %% Separate Appendices
+    P8_Litteraturliste --> Bilag["Bilag (Supplerende materiale - Separat aflevering)"]
+    subgraph "Bilag (Eksempler)"
+        Bilag_A["A: Product Backlog"]
+        Bilag_B["B: Sprint Backlogs"]
+        Bilag_C["C: Burndown Charts"]
+        Bilag_D["D: Test Cases"]
+        Bilag_E["E: CREATE Script"]
+        Bilag_F["F: INSERT Script"]
+        Bilag_G["G: Readme.md"]
+    end
+
+    %% End Node
+    Bilag --> End((Aflevering))

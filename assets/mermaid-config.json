@@ -1,0 +1,9 @@
+{
+  "layout": "elk",
+  "look": "handDrawn",
+  "theme": "default",
+  "themeVariables": {
+    "fontFamily": "arial",
+    "fontSize": "16px"
+  }
+}

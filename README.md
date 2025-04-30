@@ -1,41 +1,61 @@
 # KEA Datamatiker 2. Semester - Rapport Skabelon
 
-Dette repository indeholder en skabelon til eksamensprojektrapporten for KEA Datamatiker 2. semester med fokus på casen fra Bilabonnement.dk.
+Dette repository indeholder en skabelon til eksamensprojektrapporten for KEA Datamatiker 2. semester med fokus på Bilabonnement.dk casen.
 
-## Indhold
+## Hovedfiler
 
-Skabelonen indeholder følgende hovedsektioner:
+- **RAPPORT-SKABELON.md** - Markdown-version af rapportskabelonen
+- **RAPPORT-SKABELON.txt** - Tekstversion af skabelonen (til nem kopiering til Word)
 
-1. **Indledning**
-2. **Analyse** (Interessentanalyse, Risikoanalyse, Feasibility Study, etc.)
-3. **Design** (Kravspecifikation, Systemarkitektur, Databasedesign, etc.)
-4. **Implementering** (Teknologi, Programmering, Database, Deployment)
-5. **Test**
-6. **Projektstyring (Scrum)**
-7. **Konklusion**
-8. **Litteraturliste**
-9. **Bilag**
+[rapport-struktur diagram](#diagrams)
 
-## Sådan bruger du skabelonen
+## Skabelonens formål
 
-1. Clone dette repository
+Denne skabelon giver en struktureret ramme for jeres rapport og sikrer, at I adresserer alle de påkrævede elementer fra opgavebeskrivelsen. Den fungerer som et værktøj til at organisere jeres dokumentation og sikre ensartethed på tværs af projektet.
+
+## Sådan bruges skabelonen
+
+1. Gennemgå hele skabelonen for at få overblik over rapportens struktur
 2. Fordel ansvar for de forskellige afsnit mellem gruppemedlemmerne
-3. Udfyld skabelonen baseret på jeres projekt
-4. Brug Markdown eller konverter til Word/andet format efter behov
-5. Husk at følge rapportens vejledning og krav fra opgavebeskrivelsen
+3. Udfyld alle afsnit baseret på jeres projektarbejde
+4. Vælg format:
+   - Brug Markdown-filen, hvis I arbejder i et Markdown-værktøj
+   - Brug tekstfilen til at kopiere indholdet direkte til Word
 
-## Vigtige datoer
-- **Afleveringsdato:** 28. maj 2025
+## Vigtige retningslinjer
 
-## Tilpasning til projektet
-Skabelonen er designet specifikt til Bilabonnement.dk casen med plads til alle de elementer, der er krævet i opgavebeskrivelsen. Husk at tilpasse indholdet til jeres specifikke implementering og løsningsvalg.
+- Følg vejledningen i skabelonen nøje
+- Alle påkrævede afsnit skal udfyldes
+- Husk at markere forfattere ved hvert afsnit med [Gruppemedlems Navn(e)]
+- Fokuser på at dokumentere jeres arbejde i forhold til minimumskravene
+- Aflever rapporten i PDF-format ifølge instruktionerne
 
-## Git struktur
+## Afleveringsfrist
 
-Repositoryet er organiseret med følgende filer:
-- `README.md` - Denne fil
-- `RAPPORT-SKABELON.md` - Selve rapportskabelonen
-- `bilag/` - Mappe til at organisere bilag
-  - `database/` - Databasescripts (create og insert)
-  - `diagrammer/` - Diagrammer til brug i rapporten
-  - `backlog/` - Product backlog og Sprint backlogs
+- **28. maj 2025**
+
+## Kontakt
+
+Har I spørgsmål til skabelonen eller rapporten, kontakt jeres underviser.
+
+## Repo Dir struktur
+
+```
+kea-rapport-skabelon/
+├── README.md
+├── RAPPORT-SKABELON.md
+├── RAPPORT-SKABELON.txt
+└── bilag/
+    ├── database/
+    │   ├── create_script_template.sql
+    │   └── insert_script_template.sql
+    ├── backlog/
+    │   ├── product_backlog_template.md
+    │   └── sprint_backlog_template.md
+    └── diagrammer/
+        (empty folder for student diagrams)
+```
+
+## diagrams
+
+![rapport](./assets/rapport-struktur.svg)
