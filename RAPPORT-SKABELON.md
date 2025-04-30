@@ -1,0 +1,195 @@
+# Rapport Skabelon: Eksamensprojekt KEA Datamatiker 2. Semester
+
+## Titel: Udvikling af Internt System til Bilabonnement.dk
+
+### (Forside)
+
+**Projekttitel:** Udvikling af Internt System til Bilabonnement.dk
+
+**Uddannelse:** KEA Datamatiker, 2. Semester
+
+**Holdbetegnelse:** [Indsæt Holdbetegnelse]
+
+**Projektperiode:** [Startdato] - [Slutdato]
+
+**Afleveringsdato:** 28. maj 2025
+
+**Gruppemedlemmer:**
+- [Fulde Navn], [Fødselsdato], [GitHub Brugernavn]
+- [Fulde Navn], [Fødselsdato], [GitHub Brugernavn]
+- [Fulde Navn], [Fødselsdato], [GitHub Brugernavn]
+- [Fulde Navn], [Fødselsdato], [GitHub Brugernavn]
+
+**GitHub Repository Link:** [Indsæt Link til GitHub Repo]
+
+**Deployment URL (Azure):** [Indsæt URL til den kørende webapplikation]
+
+**Database Adgang (Azure MySQL):**
+- URL: [Indsæt Database URL, f.eks. Dat24dmysql.mysql.database.azure.com]
+- User: [Indsæt Database Brugernavn, f.eks. demo]
+- Password: [Indsæt Database Password, f.eks. demo]
+
+**Demo Bruger (System Login):**
+- Brugerid: demo
+- Password: demo
+
+### (Side 2 - Indholdsfortegnelse)
+
+*Automatisk genereret indholdsfortegnelse*
+
+### (Hovedafsnit starter her - Husk paginering fra denne side)
+
+## 1. Indledning [Gruppemedlems Navn(e)]
+- **1.1. Baggrund** (Kort introduktion til Bilabonnement.dk og deres nuværende situation baseret på casen)
+- **1.2. Problemstilling / Problemformulering** (Formulér det centrale problem projektet adresserer – f.eks. ineffektivitet ved Excel, manglende overblik, behov for struktureret datahåndtering for interne processer)
+- **1.3. Formål** (Hvad er målet med projektet? F.eks. at udvikle en MVP/prototype der dækker minimumskravene og understøtter de interne arbejdsgange)
+- **1.4. Afgrænsning** (Hvad inkluderer projektet, og hvad er ikke med? F.eks. fokus på interne processer efter kundebooking, ikke det kundevendte system)
+- **1.5. Læsevejledning** (Kort beskrivelse af rapportens struktur)
+
+## 2. Analyse [Gruppemedlems Navn(e) for hvert underafsnit]
+### 2.1. Interessentanalyse [Gruppemedlems Navn(e)]
+- Identifikation af interessenter (f.eks. Dataregistrering, Skade & Udbedring, Forretningsudviklere, Ledelse, Klargøring, Økonomi, FDM, Opkøbere)
+- Interessenternes interesser og indflydelse
+- Kommunikations-/Håndteringsplan (Hvordan er interessenterne håndteret i projektet?)
+
+### 2.2. Risikoanalyse og Risikoplan [Gruppemedlems Navn(e)]
+- Identifikation af risici (tekniske, projektmæssige, forretningsmæssige)
+- Udvidet risikotabel (Sandsynlighed, Konsekvens, Prioritet)
+- Præventive tiltag
+- Plan for imødegåelse af alvorlige risici
+
+### 2.3. Feasibility Study [Gruppemedlems Navn(e)]
+- Teknisk feasibility (Er teknologien moden? Har teamet kompetencerne?)
+- Økonomisk feasibility (Er løsningen rentabel på sigt? Ressourceforbrug vs. benefit - overordnet vurdering)
+- Organisatorisk feasibility (Passer løsningen ind i organisationen? Vil brugerne tage den til sig?)
+- Tidsmæssig feasibility (Kan projektet gennemføres inden for tidsrammen?)
+- Samlet vurdering af feasibility
+
+### 2.4. Forretningsprocesanalyse [Gruppemedlems Navn(e)]
+- Activity Diagram (Overordnet diagram der viser "bilens rejse" internt, fra aftaleoprettelse til salg/afslutning, baseret på casebeskrivelsen og samarbejdsdokumentationen)
+
+### 2.5. Domæneanalyse [Gruppemedlems Navn(e)]
+- Domain Model (Visuel repræsentation af kernebegreber og deres relationer – Bil, Lejeaftale, Kunde (evt. kun ID), Skade, Bruger, Afhentningssted etc.)
+- Glossary (Forklaring af centrale begreber fra Domain Model og casen – f.eks. Vognnummer, Stelnummer, Limited/Unlimited abonnement, Forhåndssalg, Tilstandsrapport)
+
+## 3. Design [Gruppemedlems Navn(e) for hvert underafsnit]
+### 3.1. Kravspecifikation [Gruppemedlems Navn(e)]
+#### 3.1.1. Funktionelle Krav 
+(Product Backlog - User Stories for alle ønskede funktioner, inkl. minimumskrav og inspiration fra casen. Prioriteret liste.)
+- Eksempel User Story: "Som Dataregistreringsmedarbejder vil jeg kunne oprette en ny lejeaftale med kundeinformation, bilinformation og aftaleperiode, så aftalen er registreret centralt."
+
+#### 3.1.2. Ikke-Funktionelle Krav 
+(F.eks. Performance, Sikkerhed (login), Brugervenlighed, Vedligeholdelse, Skalerbarhed, Multi-user adgang)
+
+### 3.2. Systemarkitektur [Gruppemedlems Navn(e)]
+- Package Diagram (Overordnet struktur af koden – f.eks. Controller, Service, Repository, Domain/Model lag)
+
+### 3.3. Detaljeret Design [Gruppemedlems Navn(e)]
+- Class Diagram (Viser klasser, attributter, metoder og relationer for de centrale dele af systemet)
+- Sequence Diagrams (Mindst 4 scenarier, der viser interaktionen mellem objekter for centrale use cases/user stories. F.eks. Opret Lejeaftale, Registrer Skade, Se Udlejede Biler, Tilbagelevering af Bil)
+
+### 3.4. Databasedesign [Gruppemedlems Navn(e)]
+- Entity Relationship Diagram (ERD) (Viser tabeller, kolonner, datatyper, primær-/fremmednøgler og relationer. Skal afspejle Domain Model og Class Diagram.)
+
+### 3.5. Brugergrænsefladedesign [Gruppemedlems Navn(e)]
+- Wireframes (Low-fidelity skitser af de vigtigste skærmbilleder/views)
+- Mock-ups (High-fidelity visualiseringer af brugergrænsefladen, evt. med farver og styling. Inkluder eksempler på Gestaltlove og Golden Rules anvendt.)
+
+### 3.6. Acceptkriterier [Gruppemedlems Navn(e)]
+- Definer konkrete, målbare acceptkriterier for de vigtigste User Stories (specielt dem der implementeres).
+- Eksempel (til Opret Lejeaftale): "Given at jeg er logget ind som Dataregistreringsmedarbejder, When jeg udfylder alle obligatoriske felter for en ny lejeaftale og trykker 'Gem', Then skal aftalen gemmes i databasen, And jeg skal se en bekræftelsesmeddelelse."
+
+## 4. Implementering [Gruppemedlems Navn(e) for hvert underafsnit]
+### 4.1. Teknologi [Gruppemedlems Navn(e)]
+- Valg af Teknologistak (Begrundelse for valg af Spring Boot, Java version, Thymeleaf, CSS, MySQL, JDBC/JdbcTemplate, Azure etc.)
+- Udviklingsmiljø (IDE'er, build tools som Maven/Gradle, versionsstyring med Git/GitHub)
+
+### 4.2. Programmering [Gruppemedlems Navn(e)]
+- Overordnet Programstruktur (Beskriv hvordan arkitekturen (f.eks. MVC/lagdeling) er implementeret i koden. Henvis til Package Diagram.)
+- Centrale Use Cases/User Stories Implementeret (Beskriv de 2-3 (eller flere) centrale use cases/user stories der er implementeret, og hvordan de er løst i koden.)
+- Komplekse Programdele [Gruppemedlems Navn(e) for specifik kode]
+- Forklar og illustrer med kommenterede kodestykker særligt komplekse eller interessante dele af løsningen.
+- Beskriv løsninger, der kræver særlig argumentation (f.eks. specifik algoritme, håndtering af en svær relation, anvendelse af avanceret ADT).
+- Database Interaktion (Hvordan kommunikerer applikationen med databasen? Vis eksempler fra Repository-laget med JDBC/JdbcTemplate).
+- GUI Implementering (Hvordan er HTML/Thymeleaf/CSS brugt? Hvordan er Gestaltlove/Golden Rules forsøgt efterlevet i den faktiske implementering?)
+- Anvendelse af Java Features (Vis eksempler på brug af klasser, metoder, kontrolstrukturer, arv/interfaces, collections).
+- Inputvalidering (Hvordan håndteres validering af brugerinput – både frontend (HTML5) og backend (Java)?)
+
+### 4.3. Database [Gruppemedlems Navn(e)]
+- Implementering af database (Henvis til ERD. Nævn at CREATE og INSERT scripts findes i bilag/repository).
+- Demo Data (Beskriv kort hvilket data der er oprettet for demobrugeren 'demo').
+
+### 4.4. Deployment [Gruppemedlems Navn(e)]
+- Proces for deployment til Azure (Beskriv kort trinene for at deploye webapplikationen og databasen).
+- Henvisning til URL (Gentag evt. URL til den kørende applikation).
+
+## 5. Test [Gruppemedlems Navn(e)]
+- **5.1. Teststrategi** (Overordnet tilgang til test – f.eks. Unit test, manuel systemtest, accepttest)
+- **5.2. Test Cases** [Gruppemedlems Navn(e) for specifikke tests]
+  - Præsenter de udarbejdede test cases (kan evt. ligge i bilag, hvis mange). Link dem til User Stories/krav.
+- **5.3. Unit Test** [Gruppemedlems Navn(e) for specifikke tests]
+  - Beskriv de udførte unit tests.
+  - Inkluder eksempel på test af 'happy flow'.
+  - Inkluder eksempel på test af 'exception flow' (f.eks. test af inputvalidering eller fejlhåndtering).
+  - Resultater af unit tests (evt. dækningsgrad hvis målt).
+- **5.4. Systemtest/Accepttest** (Beskriv kort hvordan systemet er testet manuelt ud fra use cases/brugerrollerne. Resultater heraf.)
+
+## 6. Projektstyring (Scrum) [Gruppemedlems Navn(e)]
+### 6.1. Proces [Scrum Master / PO / Hele Gruppen]
+- Roller i teamet (Hvem var PO, SM (evt. på skift), Developers).
+- Sprintforløb (Antal sprints, længde, afholdte ceremonier - kort).
+
+### 6.2. Artefakter [Gruppemedlems Navn(e)]
+- Product Backlog (Henvis til afsnit 3.1.1 eller bilag).
+- Sprint Backlogs (Inkluder liste over User Stories medtaget i hvert sprint. Kan evt. være i bilag).
+- Burndown Charts (Inkluder Burndown Chart for hvert sprint. Kan evt. være i bilag).
+
+### 6.3. Samarbejde og Værktøjer 
+(Kort om hvordan samarbejdet foregik, f.eks. brug af GitHub, Trello/Jira, kommunikationskanaler).
+
+## 7. Konklusion [Hele Gruppen]
+- **7.1. Opsamling** (Kort resume af projektets formål og den udviklede løsning).
+- **7.2. Vurdering af Resultat** (Opfylder løsningen de stillede minimumskrav? Hvor godt er de yderligere ønsker fra casen dækket? Hvad virker godt/mindre godt?).
+- **7.3. Læring** (Hvad har gruppen lært i projektet – teknisk, processuelt, samarbejdsmæssigt?).
+- **7.4. Fremtidigt Arbejde** (Hvilke udvidelser eller forbedringer kunne være næste skridt for systemet?).
+
+## 8. Litteraturliste [Hele Gruppen]
+Liste over alle anvendte kilder (bøger, artikler, websites, værktøjer) i en konsistent stil (f.eks. APA).
+
+## Bilag (Afleveres separat jf. instruks!)
+
+**Bilag A:** Komplet Product Backlog (User Stories)
+
+**Bilag B:** Sprint Backlogs
+
+**Bilag C:** Burndown Charts
+
+**Bilag D:** Komplette Test Cases
+
+**Bilag E:** Database CREATE Script (create_script.sql)
+
+**Bilag F:** Database INSERT Script (insert_script.sql)
+
+**Bilag G:** Readme fil (Kopi af README.md fra repository)
+
+**Bilag H:** Store diagrammer (hvis de fylder for meget i rapporten)
+
+**Bilag I:** Andet relevant materiale
+
+## Vejledning til brug af skabelonen:
+
+1. **Fordel Ansvar:** Start med at fordele ansvaret for de enkelte afsnit og artefakter mellem gruppemedlemmerne. Husk at markere dette tydeligt ([Gruppemedlems Navn(e)]).
+
+2. **Fyld Ud:** Arbejd jer igennem skabelonen og udfyld de enkelte punkter baseret på jeres projektarbejde.
+
+3. **Referer til Case:** Sørg for løbende at referere tilbage til informationen og kravene i casebeskrivelsen og samarbejdsdokumentationen.
+
+4. **Vær Konkret:** Undgå vage formuleringer. Brug eksempler, kodestykker (husk kommentarer), diagrammer og specifikke beskrivelser.
+
+5. **Hold Fokus:** Sørg for at rapporten primært fokuserer på det, der er krævet i opgavebeskrivelsen.
+
+6. **Overhold Krav:** Vær opmærksom på sideantal, formatering, filformat (PDF), og at bilag skal håndteres korrekt (separat).
+
+7. **Korrekturlæs:** Læs rapporten grundigt igennem for sprog, stavefejl og konsistens før aflevering. Sørg for at alle referencer (f.eks. til diagrammer, bilag) er korrekte.
+
+8. **Readme:** Glem ikke Readme.md-filen i repositoryet med de krævede informationer (link, demo-bruger, installations-/kørevejledning). Inkluder også en kopi som bilag.
